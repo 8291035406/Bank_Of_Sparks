@@ -1,0 +1,696 @@
+@import url('https:fonts.googlapis.com/css?famaily=poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    min-height: 1000px;
+    background-color:#212529 ;
+}
+
+.banner
+{
+    position: relative;
+    padding-top: 80px;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url("images/finance.png");
+    background-repeat: no-repeat,repeat;
+    background-position: 90%  100px;
+
+    
+}
+
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2{
+    font-size: 3em;
+    color: #fff;
+}
+
+.banner .content span
+{
+    color: #ff0157;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 70px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 80px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+    
+}
+
+header .navigation li {
+    list-style: none;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+
+}
+
+header .navigation li.active {
+    background: #ff0157;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+header.sticky ul li a {
+    color: #111;
+    
+}
+
+header ul li a:hover {
+    color: #ff0157;
+}
+
+section {
+    padding: 100px;
+}
+
+.services
+{
+    background-color: rgba(24, 24, 27, 0.6);
+    
+
+}
+
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.titletext
+{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 300;
+    align-items: center;
+}
+
+.titletext span
+{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.services .container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.services .container .box
+{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    background: rgb(85, 79, 79);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .container .box .imgbx
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.services .container .box .imgbx i
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services .container .box .tex p
+{
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.services .container .box .btn
+{
+    padding: 15px 0 5px;
+}
+
+.button
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: ease-out 0.6s;
+}
+
+.button:hover
+{
+    letter-spacing: 6px;
+}
+
+.contact
+{
+    background-color: goldenrod;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.contactform
+{
+    padding: 75px 50px;
+    background-color: rgba(0, 0, 0, 0.05);
+    background: #fff;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3) ;
+    width: 80%;
+    align-items: center;
+    margin-top: 50px
+}
+
+.contactform h3
+{
+    color: #111;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contactform .inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.contactform .inputbox input , .contactform .inputbox textarea
+{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    resize: none;
+}
+
+.contactform .inputbox input[type="submit"]
+{
+    font-size: 1em;
+    color: #fff;
+    background-color:#ff0157;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.contactform .inputbox input[type="submit"]:hover
+{
+    letter-spacing: 5px;
+}
+
+.custtable
+{
+    padding-top: 20px;
+}
+.custtable .table
+{
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 90vh;
+    text-align: center;
+    border: solid 1px #fff;
+    border-collapse:collapse;
+    color: #fff;
+
+}
+
+.custtable td, .custtable th
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 1em;
+}
+
+.custtable tr:nth-child(even)
+{
+    background-color: #f2f2f248;
+}
+
+.custtable tr:hover
+{
+    background: rgba(221, 221, 221, 0.096);
+}
+
+.custtable th
+{
+    padding: 12px;
+    background: #ff0156d8;
+    
+}
+
+.btton
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 10px;
+    transition: 0.5s;
+    max-width: 200px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btton:hover
+{
+    background: #c00446;
+    letter-spacing: 3px;
+}
+
+.sendMoney
+{
+    background: rgba(0, 0, 0, 0.247);
+}
+
+.transfer
+{
+    padding: 75px 50px;
+    background-color: rgba(0, 0, 0, 0.247);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    text-align: center;
+    margin-top: 50px
+
+}
+
+.transfer .inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.transfer .inputbox input
+{
+    width: 50%;
+    border: 1px solid #555;
+    padding: 10px;
+    outline: none;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    resize: none;
+}
+
+.transfer .inputbox input[type="submit"]
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 150px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.transfer .inputbox input[type="submit"]:hover
+{
+    letter-spacing: 5px;
+}
+
+.transfer .inputbox p
+{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.transfer .inputbox a
+{
+    color: #ff0157;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.balance
+{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.bal
+{
+    padding: 75px 50px;
+    background-color: rgba(0, 0, 0, 0.247);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    text-align: center;
+    margin-top: 50px
+
+}
+
+.bal .inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bal .inputbox input
+{
+    width: 50%;
+    border: 1px solid #555;
+    padding: 10px;
+    outline: none;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    resize: none;
+
+}
+
+.bal .inputbox input[type="submit"]
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 150px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.bal .inputbox input[type="submit"]:hover
+{
+    letter-spacing: 5px;
+}
+
+.bal .inputbox p
+{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bal .inputbox a
+{
+    color: #ff0157;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.alert {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.alert-danger {
+    background-image: -webkit-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
+    background-image: -o-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#e7c3c3));
+    background-image: linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
+    background-repeat: repeat-x;
+    border-color: #dca7a7;
+}
+
+.alert-success {
+    background-image: -webkit-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
+    background-image: -o-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#c8e5bc));
+    background-image: linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
+    background-repeat: repeat-x;
+    border-color: #b2dba1;
+}
+
+.he
+{
+    position: relative;
+    padding: 10px;
+    font-size: 1.5em;
+    width: 50%;
+    margin:auto;
+}
+
+.historytranser
+{
+    padding-top: 20px;
+}
+
+.historytranser .table2
+{
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 90vh;
+    text-align: center;
+    border: solid 1px #fff;
+    border-collapse:collapse;
+    color: #fff;
+}
+
+.historytranser td, .historytranser th
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 1em;
+}
+
+.historytransertr:nth-child(even) 
+{
+    background-color: #f2f2f248;
+}
+
+.historytransertr:hover
+{
+    background: rgba(221, 221, 221, 0.096);
+}
+
+.historytranser th 
+{
+    padding: 12px;
+    background: #ff0156d8;
+
+}
+
+.text,.image
+{
+   height: 100vh;
+   width: 100%;
+}
+
+.text 
+{
+    background: #b2dba1;
+}
+.image
+{
+    background: #c00446;
+}
+
+.about
+{
+    background-size: cover;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.05)
+}
+
+.about .aboutus
+{
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+
+    header .navigation
+    {
+        display: none;
+    }
+
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/Rbtn.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .menuToggle.active {
+        background: url(images/cbth.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+
+    header .logo {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    section 
+    {
+        padding: 20px;
+    
+    }
+
+    .balance
+    {
+        margin-top: 30px;
+    }
+
+    .bal{
+        padding: 10px;
+        margin-top: 30px
+    }
+
+    .bal .inputbox input
+    {
+        width: 80%;
+    }
+    
+    .sendMoney
+    {
+        margin-top: 30px;
+    }
+
+    .transfer .inputbox input
+    {
+        width: 100%;
+    }
+    
+    .contact .title
+    {
+        margin-top: 50px;
+    }
+
+    .contactform
+    {
+        width: 100%;
+        
+    }
+    .banner
+    {
+        max-height: 50vh;
+    }
+}
